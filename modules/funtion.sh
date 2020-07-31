@@ -22,7 +22,7 @@ trap "trap_ctrlc" 2
 
 banner () {
 
-echo -e "\e[1;93m
+echo -e "
 
  █████╗ ██████╗ ██████╗               ████████╗ ██████╗  ██████╗ ██╗     ██╗  ██╗██╗████████╗
 ██╔══██╗██╔══██╗██╔══██╗              ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██║ ██╔╝██║╚══██╔══╝
@@ -33,39 +33,39 @@ echo -e "\e[1;93m
 
 \e[0m"
 echo
-echo -e "\e[93mMade with \e[1;91m❤️ \e[93mby \e[1;91mASHWINI SAHU\e[0m"
+echo -e "Made with ❤️ ASHWINI SAHU"
 }
 
 
 option_list () {
 
 banner
-echo -e "\n\n\e[1;4;91mCHOOSE THE OPTIONS GIVEN BELOW\e[0m\n\n"
-echo -e "\e[1;93m1.   \e[1;92mSHOW CONNECTED DEVICES                           \e[1;93m24.  \e[1;92mPUT A FILE IN DEVICE "
-echo -e "\e[1;93m2.   \e[1;92mRESTART ADB SERVICE "
-echo -e "\e[1;93m3.   \e[1;92mREBOOT SYSTEM"
-echo -e "\e[1;93m4.   \e[1;92mREBOOT TO RECOVERY MODE                          \e[1;93m25.  \e[1;91mGO TO METASPLOIT SECTION "
-echo -e "\e[1;93m5.   \e[1;92mREBOOT TO FASTBOOT/BOOTLOADER MODE \n"
-echo -e "\e[1;93m6.   \e[1;92mSTART A INTERACTIVE SHELL                        \e[1;93m26.  \e[1;92mLAUNCH AN APPLICATION "
-echo -e "\e[1;93m7.   \e[1;92mDUMP SYSTEM INFORMATION (Messy)                  \e[1;93m27.  \e[1;92mCHECK IS PHONE ROOTED OR NOT "
-echo -e "\e[1;93m8.   \e[1;92mDUMP CPU INFORMATION (Messy)                     \e[1;93m28.  \e[1;92mHANG THE PHONE "
-echo -e "\e[1;93m9.   \e[1;92mDUMP MEMORY INFORMATION (Messy)                  \e[1;93m29.  \e[1;92mSEND SMS FROM THE PHONE "
-echo -e "\e[1;93m10.  \e[1;92mGET PHONE DETAILS"
-echo -e "\e[1;93m11.  \e[1;92mCAPTURE BUG REPORT"
-echo -e "\e[1;93m12.  \e[1;92mINSTALL AN PACAKAGE 'apk'"
-echo -e "\e[1;93m13.  \e[1;92mUNINSTALL AN PACKAGE"
-echo -e "\e[1;93m14.  \e[1;92mLIST ALL INSTALLED PACKAGE"
-echo -e "\e[1;93m15.  \e[1;92mSEE LIVE LOG OF DEVICE"
-echo -e "\e[1;93m16.  \e[1;92mESTABLISH A REMOTE CONNECTION WITH THE DEVICE\n"
-echo -e "\e[1;93m17.  \e[1;92mCAPTURE A SCREENSHOT ANONYMOUSLY"
-echo -e "\e[1;93m18.  \e[1;92mRECORD THE SCREEN ANONYMOUSLY"
-echo -e "\e[1;93m19.  \e[1;92mCOPY ALL THE CAMERA PHOTOS"
-echo -e "\e[1;93m20.  \e[1;92mCOPY ALL THE DOWNLOADS"
-echo -e "\e[1;93m21.  \e[1;92mCOPY ALL WHATSAPP DATA"
-echo -e "\e[1;93m22.  \e[1;92mCOPY ALL DEVICE STORAGE ( Takes time )           \e[1;93mA.  \e[1;92mABOUT AUTHOUR "
-echo -e "\e[1;93m23.  \e[1;92mCOPY A SPECIFIED FILE OR FOLDER                  \e[1;91mEXIT or press Ctrl+c\n"
+echo -e "\n\nCHOOSE THE OPTIONS GIVEN BELOW:\n\n"
+echo -e "1.   SHOW CONNECTED DEVICES                           24.  PUT A FILE IN DEVICE "
+echo -e "2.   RESTART ADB SERVICE "
+echo -e "3.   REBOOT SYSTEM"
+echo -e "4.   REBOOT TO RECOVERY MODE                          25.  GO TO METASPLOIT SECTION "
+echo -e "5.   REBOOT TO FASTBOOT/BOOTLOADER MODE \n"
+echo -e "6.   START A INTERACTIVE SHELL                        26.  LAUNCH AN APPLICATION "
+echo -e "7.   DUMP SYSTEM INFORMATION (Messy)                  27.  CHECK IS PHONE ROOTED OR NOT "
+echo -e "8.   DUMP CPU INFORMATION (Messy)                     28.  HANG THE PHONE "
+echo -e "9.   DUMP MEMORY INFORMATION (Messy)                  29.  SEND SMS FROM THE PHONE "
+echo -e "10.  GET PHONE DETAILS"
+echo -e "11.  CAPTURE BUG REPORT"
+echo -e "12.  INSTALL AN PACAKAGE 'apk'"
+echo -e "13.  UNINSTALL AN PACKAGE"
+echo -e "14.  LIST ALL INSTALLED PACKAGE"
+echo -e "15.  SEE LIVE LOG OF DEVICE"
+echo -e "16.  ESTABLISH A REMOTE CONNECTION WITH THE DEVICE\n"
+echo -e "17.  CAPTURE A SCREENSHOT ANONYMOUSLY"
+echo -e "18.  RECORD THE SCREEN ANONYMOUSLY"
+echo -e "19.  COPY ALL THE CAMERA PHOTOS"
+echo -e "20.  COPY ALL THE DOWNLOADS"
+echo -e "21.  COPY ALL WHATSAPP DATA"
+echo -e "22.  COPY ALL DEVICE STORAGE ( Takes time )           A.  ABOUT AUTHOUR "
+echo -e "23.  COPY A SPECIFIED FILE OR FOLDER                  E.  EXIT or press Ctrl+c\n"
 echo -e $revised
-read -p $'\e[1;4;91mSELECT ONE OF THE OPTIONS WITH THE RESPECTED NUMBER\e[0m\e[24;1;97m : ' options
+read -p $'SELECT ONE OF THE OPTIONS WITH THE RESPECTED NUMBER [0]:[24] : ' options
  
 }
 
